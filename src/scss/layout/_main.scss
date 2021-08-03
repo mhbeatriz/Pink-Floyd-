@@ -1,4 +1,4 @@
-body {
+.main {
   background-color: #393636;
 }
 .container {
@@ -76,8 +76,8 @@ body {
   height: 150px;
   margin: 15px;
   @media all and (min-width: 768px) {
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
   }
   @media all and (min-width: 1200px) {
     width: 300px;
@@ -88,38 +88,90 @@ body {
   transform: scale(1.1);
   opacity: 0.5;
 }
-.container-album {
+// .container-album {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: space-between;
+//   padding: 30px;
+//   background-color: #fed7f0;
+// }
+.container-message {
+  background-color: #fed7f0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 30px;
-  background-color: #fed7f0;
+  padding: 40px;
+  @media all and(min-width:768px) {
+    flex-direction: row;
+  }
 }
 .message {
   display: flex;
   flex-direction: column;
+  color: #686464;
+  padding: 30px;
+}
+.title-album {
+  font-size: 24px;
+  font-family: "Otomanopee One";
+  color: #393636;
+  margin-bottom: 15px;
+}
+.text {
   font-family: "Otomanopee One";
   font-size: 14px;
   line-height: 18px;
   text-align: justify;
-  color: #686464;
-  padding: 30px;
-  background-color: #fed7f0;
 }
-.span {
+.a {
   font-weight: bold;
   color: #da77aa;
   font-size: 16px;
+}
+.js-image {
+  width: 250px;
+  height: 250px;
+}
+.container-videos {
+  background-color: #f39ac8;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.subtitle {
+  font-size: 20px;
+  font-family: "Otomanopee One";
+  color: #393636;
+  margin: 20px;
+  text-align: center;
+}
+.videos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  @media all and(min-width:768px) {
+    flex-direction: row;
+  }
+}
+.video {
+  width: 360px;
+  height: 215px;
+  margin: 15px;
 }
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: #393636;
 }
 .copy {
   color: #f39ac8;
   font-family: "Roboto Condensed", sans-serif;
   margin-bottom: 15px;
+  margin: 20px;
 }
