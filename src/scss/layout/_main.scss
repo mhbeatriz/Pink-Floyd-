@@ -11,105 +11,106 @@ body {
 .title {
   font-family: "Otomanopee One";
   font-size: 22px;
-  font-size: 32px;
+  font-size: 30px;
   color: #f39ac8;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-.form__select {
-  width: 300px;
-  height: 50px;
-  background-color: #686464;
-  border: 2px solid #f39ac8;
-  border-radius: 4px;
-  color: #f39ac8;
-  font-family: "Otomanopee One";
-  font-size: 16px;
-  padding: 10px;
-}
-.form__message {
-  margin-top: 15px;
-  margin-bottom: 15px;
   text-align: center;
-  width: 350px;
-  color: #ac3972;
-  font-family: "Roboto Condensed", sans-serif;
+  margin: 15px;
 }
-.form__select:hover {
-  border: solid 3px #ac3972;
+// .form {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-around;
+//   align-items: center;
+//   padding-top: 40px;
+//   padding-bottom: 40px;
+// }
+// .form__select {
+//   width: 300px;
+//   height: 50px;
+//   background-color: #686464;
+//   border: 2px solid #f39ac8;
+//   border-radius: 4px;
+//   color: #f39ac8;
+//   font-family: "Otomanopee One";
+//   font-size: 16px;
+//   padding: 10px;
+// }
+// .form__message {
+//   margin-top: 15px;
+//   margin-bottom: 15px;
+//   text-align: center;
+//   width: 350px;
+//   color: #ac3972;
+//   font-family: "Roboto Condensed", sans-serif;
+// }
+// .form__select:hover {
+//   border: solid 3px #ac3972;
+// }
+// .form__play-button {
+//   width: 200px;
+//   height: 55px;
+//   border-radius: 5px;
+//   background-color: #fed7f0;
+//   border: #fed7f0;
+//   color: #393636;
+//   font-weight: bold;
+//   font-size: 20px;
+//   margin-top: 15px;
+//   font-family: "Otomanopee One";
+// }
+// .form__play-button:hover {
+//   transform: scale(1.2);
+//   color: #e46ca8;
+// }
+.container-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  @media all and (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
-.form__play-button {
+.album {
   width: 200px;
-  height: 55px;
-  border-radius: 5px;
-  background-color: #fed7f0;
-  border: #fed7f0;
-  color: #393636;
-  font-weight: bold;
-  font-size: 20px;
-  margin-top: 15px;
-  font-family: "Otomanopee One";
+  height: 200px;
+  margin: 15px;
+  @media all and (min-width: 768px) {
+    width: 350px;
+    height: 350px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 300px;
+    height: 300px;
+  }
 }
-.form__play-button:hover {
-  transform: scale(1.2);
-  color: #e46ca8;
+.album:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
 }
-.wishyou {
-  width: 300px;
-  height: 300px;
-}
-.container-hendrix {
+.container-album {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 30px;
-  background-color: #fcd441;
-  @media all and (min-width: 768px) {
-    flex-direction: row;
-  }
+  background-color: #fed7f0;
 }
 .message {
   display: flex;
   flex-direction: column;
+  font-family: "Otomanopee One";
+  font-size: 14px;
+  line-height: 18px;
+  text-align: justify;
+  color: #686464;
+  padding: 30px;
+  background-color: #fed7f0;
 }
-
-.hendrix-name {
-  color: #e46ca8;
-  font-size: 45px;
-  font-family: "Zen Tokyo Zoo", cursive;
-}
-.band {
-  color: #5183ac;
-  font-size: 24px;
-  font-family: "Zen Tokyo Zoo", cursive;
-}
-.woodstock {
-  color: green;
-  font-size: 32px;
-  font-family: "Zen Tokyo Zoo", cursive;
-}
-.club {
-  color: #5183ac;
-  font-size: 24px;
-  font-family: "Zen Tokyo Zoo", cursive;
-}
-.artists-club {
-  color: #ef2a99;
-  font-size: 24px;
-  font-family: "Zen Tokyo Zoo", cursive;
-}
-.audio {
-  width: 200px;
-  opacity: 0.7;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.span {
+  font-weight: bold;
+  color: #da77aa;
+  font-size: 16px;
 }
 .footer {
   display: flex;
